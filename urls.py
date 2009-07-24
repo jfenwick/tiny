@@ -1,5 +1,5 @@
+from django.conf import settings
 from django.conf.urls.defaults import *
-import settings
 from tiny.data import views as data_views
 
 # Uncomment the next two lines to enable the admin:
