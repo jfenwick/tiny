@@ -1,0 +1,10 @@
+INSTALLATION
+
+1. Delete git files:
+rm -rf .git
+
+2. Replace all instances of tiny with the name of the project:
+perl -p -i -e 's/tiny/project/g' `find .`
+
+3. Check to see if correct:
+find . -type f -exec grep "project" {} \; -print
