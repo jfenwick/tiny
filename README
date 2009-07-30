@@ -4,7 +4,7 @@ INSTALLATION
 rm -rf .git
 
 2. Replace all instances of tiny with the name of the project:
-perl -p -i -e 's/tiny/project/g' `find .`
+perl -p -i -e 's/tiny/project/g' `find . -type f`
 
 3. Check to see if correct:
 find . -type f -exec grep "project" {} \; -print
