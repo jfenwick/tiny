@@ -1,10 +1,14 @@
 INSTALLATION
 
-1. Delete git files:
+1. Rename tiny directory to name of project
+
+2. Delete git files:
 rm -rf .git
 
-2. Replace all instances of tiny with the name of the project:
+3. Replace all instances of tiny with the name of the project:
+python perlpie.py . tiny project
+or
 perl -p -i -e 's/tiny/project/g' `find . -type f`
 
-3. Check to see if correct:
-find . -type f -exec grep "project" {} \; -print
+4. Check to see if correct:
+find . -type f -exec grep "tiny" {} \; -print
