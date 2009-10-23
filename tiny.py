@@ -9,6 +9,7 @@ def tiny(projectname):
     os.remove('README')
     perlpie.listfiles('.', 'tiny', projectname)
     os.remove('perlpie.py')
+    os.remove('perlpie.pyc')
     curdir = os.getcwd()
     newdir = curdir.replace('tiny', projectname)
     shutil.move(curdir, newdir)
