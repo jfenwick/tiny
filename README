@@ -1,14 +1,7 @@
 INSTALLATION
 
-1. Rename tiny directory to name of project
+python tiny.py projectname
 
-2. Delete git files:
-rm -rf .git
+The current directory will be changed to the name of projectname
 
-3. Replace all instances of tiny with the name of the project:
-python perlpie.py . tiny project
-or
-perl -p -i -e 's/tiny/project/g' `find . -type f`
-
-4. Check to see if correct:
-find . -type f -exec grep "tiny" {} \; -print
+NOTE: This doesn't work on Windows as there are some files in .git\objects\pack that have read only permission
